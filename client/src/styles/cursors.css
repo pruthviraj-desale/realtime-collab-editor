@@ -1,0 +1,46 @@
+/* ================================
+   Remote cursor root
+   ================================ */
+.ql-cursor {
+  pointer-events: auto;
+  z-index: 10;
+}
+
+/* ================================
+   Remote cursor caret (vertical bar)
+   ================================ */
+.ql-cursor-caret {
+  border-left-width: 2px !important;
+}
+
+/* ================================
+   Remote user name label
+   Hidden by default
+   ================================ */
+.ql-cursor-label {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+  white-space: nowrap;
+
+  /* Prevent covering text */
+  transform: translateY(-100%);
+}
+
+/* ================================
+   Show name ONLY on hover
+   ================================ */
+.ql-cursor:hover .ql-cursor-label {
+  opacity: 1;
+}
+
+/* ================================
+   Remote selection highlight
+   ================================ */
+.ql-cursor-selection {
+  opacity: 0.25;
+}
