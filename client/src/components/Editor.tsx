@@ -45,6 +45,8 @@ export default function Editor({ docId }: Props) {
 
     const container = editorRef.current;
     container.innerHTML = '';
+    
+
 
     /* ---------- Quill ---------- */
     const quill = new Quill(container, {
@@ -69,10 +71,11 @@ export default function Editor({ docId }: Props) {
 
     /* ---------- WebSocket Provider ---------- */
     const provider = new WebsocketProvider(
-      'ws://localhost:1234',
+      import.meta.env.VITE_WS_URL,
       docId,
       ydoc
     );
+
 
     /* ---------- Awareness ---------- */
     const awareness = provider.awareness;
