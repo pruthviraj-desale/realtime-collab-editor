@@ -1,12 +1,19 @@
 import Editor from './components/Editor';
+import './styles/header.css';
 
 export default function App() {
-  const docId = new URLSearchParams(window.location.search).get('doc') || 'demo';
+  const docId =
+    new URLSearchParams(window.location.search).get('doc') || 'test';
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Realtime Collaborative Editor</h2>
+    <>
+      <header className="app-header">
+        <div className="app-title">
+          Realtime Collaborative Editor
+        </div>
+      </header>
+
       <Editor docId={docId} />
-    </div>
+    </>
   );
 }

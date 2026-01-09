@@ -1,0 +1,19 @@
+/* ================================
+   Top app header
+   ================================ */
+.app-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.2px;
+}

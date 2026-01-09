@@ -1,4 +1,4 @@
-/* Full editor background */
+Full editor background
 .editor-wrapper {
   min-height: 100vh;
   background: #f2f2f2; /* light gray like Google Docs */
@@ -8,20 +8,6 @@
 }
 
 /* A4 page */
-/* .a4-page {
-  width: 210mm;
-  min-height: 297mm;
-  background: white;
-
-  
-  padding:
-    25mm   
-    20mm 
-    25mm  
-    20mm;  
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-} 
-*/
 
 .a4-page {
   width: 210mm;
